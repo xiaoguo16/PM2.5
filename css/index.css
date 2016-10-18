@@ -1,0 +1,60 @@
+
+.line {
+    fill: none;
+    /*stroke:#6495ED;*/
+    stroke: #8a8d8b;
+    stroke-width: 1.5px;
+}
+.rect{
+    fill:none;
+    stroke:white;
+}
+
+
+/*饼状图提示框*/
+.tooltip{
+    position: absolute;
+    width:120px;
+    height: auto;
+    font-family: simsun;
+    font-size:14px;
+    text-align: center;
+    border-style: solid;
+    border: 2px solid #ccc;
+    background-color: #ccc;
+    color: white;
+    border-radius:5px;
+
+}
+
+.tooltip:after{
+    content:'';
+    position:absolute;
+    bottom:100%;
+    left:20%;
+    margin-left:-8px;
+    width:0;
+    height:0;
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left:12px solid transparent;
+}
+
+/*div布局*/
+div#map {
+    overflow: hidden;
+    position: absolute;
+height:700px;
+    width:100%;
+}
+
+div#lines{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: #8a8d8b;
+}
+
+
